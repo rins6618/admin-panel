@@ -1,2 +1,2 @@
-# admin-panel
-Project 7 of TOP. https://www.theodinproject.com/about
+# Admin Panel
+Project 7 of TOP.
