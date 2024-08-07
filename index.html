@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link href="./style.css" rel="stylesheet">
     <script src="./buttontest.js" defer></script>
     <title>Admin Panel</title>
@@ -55,7 +57,24 @@
                 </li>
             </ul>
         </aside>
-        <header class="grid"></header>
+        <header class="grid">
+            <div class="top-header flex">
+                <search class="flex">
+                    <form method="get" action="/">
+                        <div class="flex">
+                            <input type="text"><button></button>
+                        </div>
+                    </form>
+                </search>
+                <div class="hs"></div>
+                <ul class="flex">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="profile-pic"></div>
+            </div>
+        </header>
         <main class="grid">
             <div class="card-container flex">
                 <h2>Your projects</h2>
