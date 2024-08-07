@@ -4,75 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d74066f640.js" crossorigin="anonymous"></script>
     <link href="./style.css" rel="stylesheet">
-    <script src="./buttontest.js" defer></script>
     <title>Admin Panel</title>
 </head>
 <body>
     <div class="grid container">
         <aside class="sidebar flex">
             <div class="flex">
-                <div class="icon"></div>
+                <div class="icon"><i class="fa-solid fa-gears"></i></div>
                 <h1>Dashboard</h1>
             </div>
             <ul class="navigation flex">
                 <li class="flex">
-                    <div class="icon"></div>
-                    <a href="">Test element</a>
+                    <div class="icon"><i class="fa-solid fa-house"></i></div>
+                    <a href="">Home</a>
                 </li>
                 <li class="flex">
-                    <div class="icon"></div>
-                    <a href="">Test element</a>
+                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                    <a href="">Profile</a>
                 </li>
                 <li class="flex">
-                    <div class="icon"></div>
-                    <a href="">Test element</a>
+                    <div class="icon"><i class="fa-solid fa-comments"></i></div>
+                    <a href="">Messages</a>
                 </li>
                 <li class="flex">
-                    <div class="icon"></div>
-                    <a href="">Test element</a>
+                    <div class="icon"><i class="fa-solid fa-clock"></i></div>
+                    <a href="">History</a>
                 </li>
                 <li class="flex">
-                    <div class="icon"></div>
-                    <a href="">Test element</a>
+                    <div class="icon"><i class="fa-solid fa-list"></i></div>
+                    <a href="">Tasks</a>
                 </li>
                 <li class="flex">
-                    <div class="icon"></div>
-                    <a href="">Test element</a>
+                    <div class="icon"><i class="fa-solid fa-face-smile"></i></div>
+                    <a href="">Communities</a>
                 </li>
             </ul>
             <ul class="preferences flex">
                 <li class="flex">
-                    <div class="icon"></div>
-                    <a href="">Test element</a>
+                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
+                    <a href="">Settings</a>
                 </li>
                 <li class="flex">
-                    <div class="icon"></div>
-                    <a href="">Test element</a>
+                    <div class="icon"><i class="fa-solid fa-address-book"></i></div>
+                    <a href="">Support</a>
                 </li>
                 <li class="flex">
-                    <div class="icon"></div>
-                    <a href="">Test element</a>
+                    <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <a href="">Privacy</a>
                 </li>
             </ul>
         </aside>
         <header class="grid">
             <div class="top-header flex">
                 <search class="flex">
-                    <form method="get" action="/">
-                        <div class="flex">
-                            <input type="text"><button></button>
-                        </div>
+                    <form method="get" action="#" class="flex">
+                        <button class="icon"><i class="fa-solid fa-magnifying-glass"></i></button> <input type="text" class="flex">
                     </form>
                 </search>
                 <div class="hs"></div>
-                <ul class="flex">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <button class="icon flex stretch big"><i class="fa-solid fa-bell"></i></button>
                 <div class="profile-pic"></div>
+                <h3><a href="#">Username Bunchanumbers</a></h3>
+            </div>
+            <div class="bottom-header flex">
+                <div class="profile-pic"></div>
+                <div class="splash flex">
+                    <span>Hi there,</span>
+                    <h1>Username (@handle)</h1>
+                </div>
+                <div class="hs"></div>
+                <ul class="flex">
+                    <li><button>New</button></li>
+                    <li><button>Upload</button></li>
+                    <li><button>Share</button></li>
+                </ul>
             </div>
         </header>
         <main class="grid">
@@ -85,9 +92,9 @@
                             Mauris sodales aliquet lectus, nec pellentesque arcu varius quis. Aenean id tortor et risus viverra blandit. Nullam at ligula eleifend, malesuada ante eu, sagittis nisl.
                         </p>
                         <ul class="buttons flex">
-                            <li><button></button></li>
-                            <li><button></button></li>
-                            <li><button></button></li>
+                            <li><button class="icon heart"><i class="fa-solid fa-heart-circle-plus"></i></button></li>
+                            <li><button class="icon pin"><i class="fa-solid fa-thumbtack"></i></button></li>
+                            <li><button class="icon fork"><i class="fa-solid fa-code-fork"></i></button></li>
                         </ul>
                     </li>
                     <li class="card flex">
@@ -96,9 +103,9 @@
                             Phasellus ut enim facilisis, dictum nunc quis, consequat nisl. Vivamus sem libero, varius a ullamcorper at, porttitor sed velit. Nulla vel nisi at lacus venenatis. 
                         </p>
                         <ul class="buttons flex">
-                            <li><button></button></li>
-                            <li><button></button></li>
-                            <li><button></button></li>
+                            <li><button class="icon heart"><i class="fa-solid fa-heart-circle-plus"></i></button></li>
+                            <li><button class="icon pin"><i class="fa-solid fa-thumbtack"></i></button></li>
+                            <li><button class="icon fork"><i class="fa-solid fa-code-fork"></i></button></li>
                         </ul>
                     </li>
                     <li class="card flex">
@@ -107,9 +114,9 @@
                             Vestibulum justo nibh, auctor sed ornare et, dapibus vitae ipsum. Donec ligula mauris, lobortis varius metus sed, condimentum fermentum mi. Praesent id elit est. Proin. 
                         </p>
                         <ul class="buttons flex">
-                            <li><button></button></li>
-                            <li><button></button></li>
-                            <li><button></button></li>
+                            <li><button class="icon heart"><i class="fa-solid fa-heart-circle-plus"></i></button></li>
+                            <li><button class="icon pin"><i class="fa-solid fa-thumbtack"></i></button></li>
+                            <li><button class="icon fork"><i class="fa-solid fa-code-fork"></i></button></li>
                         </ul>
                     </li>
                     <li class="card flex">
@@ -118,9 +125,9 @@
                             In hac habitasse platea dictumst. Donec sagittis, metus at suscipit commodo, sapien leo tristique nisi, id facilisis nibh elit at ante. Quisque ut gravida leo. 
                         </p>
                         <ul class="buttons flex">
-                            <li><button></button></li>
-                            <li><button></button></li>
-                            <li><button></button></li>
+                            <li><button class="icon heart"><i class="fa-solid fa-heart-circle-plus"></i></button></li>
+                            <li><button class="icon pin"><i class="fa-solid fa-thumbtack"></i></button></li>
+                            <li><button class="icon fork"><i class="fa-solid fa-code-fork"></i></button></li>
                         </ul>
                     </li>
                     <li class="card flex">
@@ -129,9 +136,9 @@
                             Duis urna erat, porttitor eu consequat ac, molestie ac augue. Vivamus quis tempus metus. Aliquam erat volutpat. Vestibulum ac imperdiet ipsum. Sed eget pellentesque mauris. 
                         </p>
                         <ul class="buttons flex">
-                            <li><button></button></li>
-                            <li><button></button></li>
-                            <li><button></button></li>
+                            <li><button class="icon heart"><i class="fa-solid fa-heart-circle-plus"></i></button></li>
+                            <li><button class="icon pin"><i class="fa-solid fa-thumbtack"></i></button></li>
+                            <li><button class="icon fork"><i class="fa-solid fa-code-fork"></i></button></li>
                         </ul>
                     </li>
                     <li class="card flex">
@@ -140,9 +147,15 @@
                             Aliquam erat volutpat. Mauris malesuada consectetur lorem ac auctor. Integer tempor magna scelerisque tortor volutpat, in eleifend ipsum pulvinar. Nam arcu lorem, interdum at tristique. 
                         </p>
                         <ul class="buttons flex">
-                            <li><button></button></li>
-                            <li><button></button></li>
-                            <li><button></button></li>
+                            <li>
+                                <button class="icon heart"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                            </li>
+                            <li>
+                                <button class="icon pin"><i class="fa-solid fa-thumbtack"></i></button>
+                            </li>
+                            <li>
+                                <button class="icon fork"><i class="fa-solid fa-code-fork"></i></button>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -171,7 +184,34 @@
             <aside class="trending flex">
                 <h2>Trending</h2>
                 <ul class="flex">
-
+                    <li class="flex">
+                        <div class="profile-pic"></div>
+                        <a href="">Username (@handle)</a>
+                    </li>
+                    <li class="flex">
+                        <div class="profile-pic"></div>
+                        <a href="">Username (@handle)</a>
+                    </li>
+                    <li class="flex">
+                        <div class="profile-pic"></div>
+                        <a href="">Username (@handle)</a>
+                    </li>
+                    <li class="flex">
+                        <div class="profile-pic"></div>
+                        <a href="">Username (@handle)</a>
+                    </li>
+                    <li class="flex">
+                        <div class="profile-pic"></div>
+                        <a href="">Username (@handle)</a>
+                    </li>
+                    <li class="flex">
+                        <div class="profile-pic"></div>
+                        <a href="">Username (@handle)</a>
+                    </li>
+                    <li class="flex">
+                        <div class="profile-pic"></div>
+                        <a href="">Username (@handle)</a>
+                    </li>
                 </ul>
             </aside>
         </main>

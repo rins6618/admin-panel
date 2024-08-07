@@ -40,6 +40,21 @@ li {
     list-style: none;
 }
 
+.big {
+    font-size: 1.5rem;
+}
+
+.stretch {
+    height: 100%;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .hs {
     margin: 0px auto;
 }
@@ -54,8 +69,8 @@ li {
 .container {
     height: 100%;
     width: 100%;
-    grid-template-columns: 250px 4fr;
-    grid-template-rows: 200px 4fr;
+    grid-template-columns: 300px 4fr;
+    grid-template-rows: 250px 4fr;
     grid-template-areas: 
     "sidebar header"
     "sidebar .";
@@ -81,30 +96,43 @@ li {
 
 .sidebar .icon {
     width: 2rem;
-    height: 2rem;
-    background-color: var(--theme-text-color);
-    border-radius: 10%;
+    height: 2rem;       
+}
+
+.sidebar .icon > i {
+    color: var(--theme-text-color);
+    font-size: 2rem;
 }
 
 .navigation .icon,
 .preferences .icon {
     width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 10%;
+}
+
+.navigation .icon > i,
+.preferences .icon > i {
+    font-size: 1.5rem;
 }
 
 .navigation,
 .preferences {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     flex-direction: column;
-    gap: 1.5rem;
 }
 
 .navigation li,
 .preferences li {
-    align-items: center;
+    padding: 1rem;
+    align-items: stretch;
     gap: 1.5rem;
     position: relative;
+}
+
+.navigation li *,
+.preferences li * {
+    display: flex;
+    align-content: center;
+    align-self: center;
 }
 
 .navigation a,
@@ -137,10 +165,94 @@ header {
     box-shadow: 0px 5px 5px 0px #aaa;
 }
 
-.top-header {    
-    padding: 1rem;
+.top-header {
+    grid-column: 1;
+    grid-row: 1;    
+    padding: 2rem;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+}
+
+search {
+    height: 100%;
+    align-items: center;
+    flex: 0 1 auto;
+}
+
+search form {
+    height: 100%;
+    flex: 0 1 auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+search form > * {
+    height: 100%;
+}
+
+search input {
+    height: 80%;
+    background-color: #dde3ed;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: calc(2rem + 64ch);
+    flex: 0 1 auto;
+}
+
+.top-header h3 {
+    position: relative;
+    padding: 1rem;
+}
+
+.top-header h3 > a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.top-header h3 > a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bottom-header {
+    padding: 2rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.splash {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bottom-header ul {
+    gap: 2rem;
+}
+
+.bottom-header button {
+    font-weight: bold;
+    height: 3rem;
+    width: 12ch;
+    border-radius: 1.5rem;
+    border: hidden;
+    background-color: var(--theme-color);
+    color: var(--theme-text-color);
+}
+
+
+.icon {
+    cursor: pointer;
+    background-color: #0000;
+    border: none;
+    aspect-ratio: 1 / 1;
 }
 
 main {
@@ -212,25 +324,19 @@ main {
     gap: 2rem;
 }
 
-.card > .buttons > li {
-    position: relative;
+.buttons .icon {
+    width: 2rem;
+    height: 2rem;
 }
 
-.card button {
-    width: 1rem;
-    border: hidden;
-    background: #0000;
-    height: 0;
+.buttons .icon > i {
+    padding: 1rem;
+    font-size: 2rem;
+    color: #999;
 }
 
-.card button::after {
-    cursor: pointer;
-    content: "⚫";
-    position: absolute;
-    left: -0.05rem;
-    right: 0;
-    top: -0.05rem;
-    bottom: 0;
+.buttons .icon > i:hover {
+    color: var(--theme-dark-color);
 }
 
 .announcements {
@@ -294,9 +400,35 @@ main {
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0px 0px 5px 0px #aaa;
-    padding: 2rem;
     overflow: scroll;
     scrollbar-width: 4px;
     scroll-padding: 2rem;
-    flex: 1;
+}
+
+.trending li {
+    height: 4rem;
+    box-sizing: content-box;
+    position: relative;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.trending li:not(:last-child) {
+    border-bottom: 2px solid #ccc;
+}
+
+.trending li>a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.trending li>a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
